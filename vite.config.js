@@ -14,7 +14,9 @@ const hostname = 'http://localhost:3000/'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-  	legacy(),
+  	legacy([
+  		"dead"
+  	]),
     yaml(),
     vue({
       include: [/\.vue$/, /\.md$/], // <--
