@@ -5,6 +5,7 @@ specifiers:
   '@tailwindcss/forms': ^0.5.1
   '@tailwindcss/line-clamp': ^0.4.0
   '@tailwindcss/typography': ^0.5.2
+  '@vitejs/plugin-legacy': ^1.8.2
   '@vitejs/plugin-vue': ^2.3.1
   '@vueuse/head': ^0.7.6
   autoprefixer: ^10.4.7
@@ -28,6 +29,7 @@ dependencies:
   '@tailwindcss/forms': 0.5.1_tailwindcss@3.0.24
   '@tailwindcss/line-clamp': 0.4.0_tailwindcss@3.0.24
   '@tailwindcss/typography': 0.5.2_tailwindcss@3.0.24
+  '@vitejs/plugin-legacy': 1.8.2_vite@2.9.8
   '@vueuse/head': 0.7.6_vue@3.2.33
   autoprefixer: 10.4.7_postcss@8.4.13
   markdown-it-prism: 2.2.4
@@ -316,6 +318,11 @@ packages:
       - supports-color
     dev: false
 
+  /@babel/standalone/7.18.0:
+    resolution: {integrity: sha512-Hy7bPNXJg0Z19iWk9JDPZE0wHB0FN+1ovaGearTzFA+s9Q3hl44dlNA+v5snDqDaDC4zodgpGGImUGeseVDUFg==}
+    engines: {node: '>=6.9.0'}
+    dev: false
+
   /@babel/template/7.16.7:
     resolution: {integrity: sha512-I8j/x8kHUrbYRTUxXrrMbfCa7jxkE7tZre39x3kjr9hvI82cK1FfqLygotcWN5kdPGWcLdWMHpSBavse5tWw3w==}
     engines: {node: '>=6.9.0'}
@@ -468,6 +475,20 @@ packages:
 
   /@types/ms/0.7.31:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
+    dev: false
+
+  /@vitejs/plugin-legacy/1.8.2_vite@2.9.8:
+    resolution: {integrity: sha512-NCOKU+pU+cxLMR9P9RTolEuOK+h+zYBXlknj+zGcKSj/NXBZYgA1GAH1FnO4zijoWRiTaiOm2ha9LQrELE7XHg==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      vite: ^2.8.0
+    dependencies:
+      '@babel/standalone': 7.18.0
+      core-js: 3.22.5
+      magic-string: 0.26.2
+      regenerator-runtime: 0.13.9
+      systemjs: 6.12.1
+      vite: 2.9.8
     dev: false
 
   /@vitejs/plugin-vue/2.3.2_vite@2.9.8+vue@3.2.33:
@@ -781,6 +802,11 @@ packages:
     resolution: {integrity: sha512-+OQdjP49zViI/6i7nIJpA8rAl4sV/JdPfU9nZs3VqOwGIgizICvuN2ru6fMd+4llL0tar18UYJXfZ/TWtmhUjA==}
     dependencies:
       safe-buffer: 5.1.2
+    dev: false
+
+  /core-js/3.22.5:
+    resolution: {integrity: sha512-VP/xYuvJ0MJWRAobcmQ8F2H6Bsn+s7zqAAjFaHGBMc5AQm7zaelhD1LGduFn2EehEcQcU+br6t+fwbpQ5d1ZWA==}
+    requiresBuild: true
     dev: false
 
   /cross-spawn/7.0.3:
@@ -1760,6 +1786,10 @@ packages:
       picomatch: 2.3.1
     dev: false
 
+  /regenerator-runtime/0.13.9:
+    resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==}
+    dev: false
+
   /regexp.prototype.flags/1.4.3:
     resolution: {integrity: sha512-fjggEOO3slI6Wvgjwflkc4NFRCTZAu5CnNfBd5qOMYhWdn67nJBBu34/TkD++eeFmd8C9r9jfXJ27+nSiRkSUA==}
     engines: {node: '>= 0.4'}
@@ -1903,6 +1933,10 @@ packages:
 
   /svg-tags/1.0.0:
     resolution: {integrity: sha1-WPcc7jvVGbWdSyqEO2x95krAR2Q=}
+    dev: false
+
+  /systemjs/6.12.1:
+    resolution: {integrity: sha512-hqTN6kW+pN6/qro6G9OZ7ceDQOcYno020zBQKpZQLsJhYTDMCMNfXi/Y8duF5iW+4WWZr42ry0MMkcRGpbwG2A==}
     dev: false
 
   /tailwindcss/3.0.24:
