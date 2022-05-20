@@ -16,7 +16,7 @@ export default defineConfig({
   plugins: [
   	legacy({
   		targets: {
-  			"chrome": "65"
+  			"chrome": "58"
   		}
   	}),
     yaml(),
