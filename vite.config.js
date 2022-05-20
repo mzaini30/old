@@ -15,9 +15,7 @@ const hostname = 'http://localhost:3000/'
 export default defineConfig({
   plugins: [
   	legacy({
-  		targets: {
-  			"chrome": "58"
-  		}
+  		targets: ['chrome >= 58']
   	}),
     yaml(),
     vue({
